@@ -125,4 +125,35 @@ Public Class TestHarness_DWG
 
 
     End Sub
+
+    Private Sub btnAssySelect_Click(sender As Object, e As EventArgs) Handles btnAssySelect.Click
+
+        'Only get this if the document is a drawing document
+        Dim activeDWG As DrawingDocument = If(invAppObj.ActiveDocument.DocumentType = DocumentTypeEnum.kDrawingDocumentObject,
+                                            CType(invAppObj.ActiveDocument, DrawingDocument), Nothing)
+        If activeDWG IsNot Nothing Then
+            Dim view1 As DrawingView = activeDWG.ActiveSheet.DrawingViews.Item(1)
+
+            Dim refDoc As AssemblyDocument = CType(view1.ReferencedDocumentDescriptor.ReferencedDocument, AssemblyDocument)
+
+            For Each leafOcc As ComponentOccurrence In CType(refDoc.ComponentDefinition, AssemblyComponentDefinition).Occurrences.AllLeafOccurrences
+                If leafOcc.DefinitionDocumentType = DocumentTypeEnum.kPartDocumentObject Then
+                    If CType(CType(leafOcc.Definition, PartComponentDefinition).Document, PartDocument).
+                        AttributeManager.FindAttributes("KETIV", "CompType", "CheeseWedge").Count > 0 Then
+
+                        Dim drawingCurves = view1.DrawingCurves(leafOcc)
+
+                        For Each dCurve As DrawingCurve In drawingCurves
+                            dCurve.DebugFakeHighlight
+                        Next
+
+
+                    End If
+                End If
+            Next
+
+        End If
+
+
+    End Sub
 End Class

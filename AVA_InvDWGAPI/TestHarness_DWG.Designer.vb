@@ -26,6 +26,7 @@ Partial Class TestHarness_DWG
         Me.btnDimLinAngle = New System.Windows.Forms.Button()
         Me.btnDimParallelCrv = New System.Windows.Forms.Button()
         Me.btnViewScale = New System.Windows.Forms.Button()
+        Me.btnAssySelect = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnDimWedge
@@ -68,11 +69,22 @@ Partial Class TestHarness_DWG
         Me.btnViewScale.Text = "View Scale"
         Me.btnViewScale.UseVisualStyleBackColor = True
         '
+        'btnAssySelect
+        '
+        Me.btnAssySelect.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAssySelect.Location = New System.Drawing.Point(86, 576)
+        Me.btnAssySelect.Name = "btnAssySelect"
+        Me.btnAssySelect.Size = New System.Drawing.Size(166, 73)
+        Me.btnAssySelect.TabIndex = 4
+        Me.btnAssySelect.Text = "Assembly Select"
+        Me.btnAssySelect.UseVisualStyleBackColor = True
+        '
         'TestHarness_DWG
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(350, 567)
+        Me.ClientSize = New System.Drawing.Size(350, 717)
+        Me.Controls.Add(Me.btnAssySelect)
         Me.Controls.Add(Me.btnViewScale)
         Me.Controls.Add(Me.btnDimParallelCrv)
         Me.Controls.Add(Me.btnDimLinAngle)
@@ -87,4 +99,5 @@ Partial Class TestHarness_DWG
     Friend WithEvents btnDimLinAngle As Windows.Forms.Button
     Friend WithEvents btnDimParallelCrv As Windows.Forms.Button
     Friend WithEvents btnViewScale As Windows.Forms.Button
+    Friend WithEvents btnAssySelect As Windows.Forms.Button
 End Class
