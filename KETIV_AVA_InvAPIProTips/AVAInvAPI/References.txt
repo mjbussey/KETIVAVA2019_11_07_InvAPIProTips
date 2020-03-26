@@ -1,0 +1,16 @@
+References
+
+Visual Basic .NET All-In-One Desk Reference For Dummies 
+https://www.amazon.com/Visual-Basic-NET-Reference-Dummies/dp/0764525794/ref=sr_1_1?crid=244ZWM03C471O&keywords=visual+basic+.net+for+dummies&qid=1564689957&s=gateway&sprefix=visual+basic+.net+f%2Caps%2C179&sr=8-1
+
+C# 7.0 All-in-One For Dummies https://www.amazon.com/C-7-0-All-One-Dummies/dp/1119428114/ref=sr_1_1?crid=37H64STSFK18G&keywords=c+7.0+for+dummies&qid=1564690148&s=gateway&sprefix=C%23+7.0%2Caps%2C177&sr=8-1
+
+Visual Basic 2015 Unleashed https://www.amazon.com/Visual-Basic-2015-Unleashed-Alessandro/dp/9332570906/ref=sr_1_2?crid=T6777IWBLRY3&keywords=visual+basic+2015+unleashed&qid=1564689893&s=gateway&sprefix=visual+basic+2015+un%2Caps%2C176&sr=8-2  
+
+
+Professional C# 7 and .NET Core 2.0 7th Edition https://www.amazon.com/Professional-NET-Core-Christian-Nagel/dp/1119449278/ref=sr_1_3?crid=1C900TZRFWFTC&keywords=professional+c%23+7+and+.net+core+2.0&qid=1564690091&s=gateway&sprefix=Professional+c%23+and+.net%2Caps%2C185&sr=8-3
+
+
+Attribute Helper by Brian Ekins: https://ekinssolutions.com/attribute_helper/
+
+

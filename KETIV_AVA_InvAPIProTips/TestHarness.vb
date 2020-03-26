@@ -13,6 +13,7 @@ Public Class TestHarness
 
             For Each childOcc As Inventor.ComponentOccurrence In activeDoc.myCompDefn.ToAssyCompDefn.Occurrences
                 Console.WriteLine(childOcc.myDocFileName)
+
             Next
 
         Else
