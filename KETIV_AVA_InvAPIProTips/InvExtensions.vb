@@ -86,7 +86,7 @@ Public Module InvExtensions
             CType(aView.ReferencedDocumentDescriptor.ReferencedDocument, Inventor.AssemblyDocument).ComponentDefinition.Occurrences.AllLeafOccurrences
 
             'Fist see if there are faces that has the attibute
-            If aView.DrawingCurves(viewOCC).Count > 0 And viewOCC.Definition.Type = ObjectTypeEnum.kPartComponentDefinitionObject Then
+            If aView.DrawingCurves(viewOCC).Count > 0 And (viewOCC.Definition.Type = ObjectTypeEnum.kPartComponentDefinitionObject Or viewOCC.Definition.Type = ObjectTypeEnum.kSheetMetalComponentDefinitionObject) Then
 
                 Dim oCollection As Inventor.ObjectCollection = CType(viewOCC.Definition.Document,
                                     Inventor.PartDocument).AttributeManager.FindObjects(AttributeSetName,
